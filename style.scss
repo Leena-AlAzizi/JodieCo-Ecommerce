@@ -1,0 +1,137 @@
+$color-000: #000;
+$color-fff: #fff;
+$color-b5b5b5: #b5b5b5;
+$color-d7d7d7: #d7d7d7;
+$color-fbbef5: #fbbef5;
+
+@for $i from 1 through 100{
+    .font-size-#{$i}px{
+        font-size: $i * 1px;
+    }
+}
+@for $i from 1 through 9{
+    .font-weight-#{$i * 100}{
+        font-weight: $i * 100;
+    }
+}
+@for $i from 1 through 500{
+    .height-#{$i}px{
+        height: $i *1px !important;
+    }
+}
+@for $i from 1 through 600{
+    .width-#{$i}px{
+        width: $i *1px;
+    }
+}
+@for $i from 1 through 99{
+    .width-#{$i}per{
+        width: $i *1%;
+    }
+}
+@for $i from 1 through 99{
+    .height-#{$i}per{
+        height: $i *1% !important;
+    }
+}
+@for $i from 1 through 300{
+    .padding-#{$i}px{
+        padding: $i * 1px;
+    }
+}
+@for $i from 1 through 300{
+    .padding-right-#{$i}px{
+        padding-right: $i * 1px;
+    }
+}
+@for $i from 1 through 15{
+    .border-radius-#{$i}px{
+        border-radius: $i * 1px;
+    }
+}
+@for $i from 1 through 300{
+    .padding-x-#{$i}px{
+        padding-left: $i * 1px;
+        padding-right: $i * 1px;
+
+    }
+}
+@for $i from 1 through 300{
+    body .margin-top-#{$i}px{
+        margin-top: $i * 1px;
+    }
+}
+.color-000{
+    color: $color-000 !important;
+}
+.color-fff{
+    color: $color-fff !important;
+}
+.color-d7d7d7{
+    color: $color-d7d7d7 !important;
+}
+.color-b5b5b5{
+    color: $color-b5b5b5 !important;
+}
+.color-fbbef5{
+    color: $color-fbbef5 !important;
+}
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+}
+.border-none{
+    border: none;
+}
+.card-img {
+    border-radius: 4px;
+    width: 240px; 
+    height: 240px; 
+    object-fit: cover;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+.card-body .btn , .product-btn{
+    font-weight: 600;
+    color: $color-fff;
+    background-color: #222222;
+    border: 1px solid #222222;
+    padding: 5px ;
+    font-size: 12px;
+}
+.background-none{
+    background: none;
+}
+.border-top-b5b5b5{
+    border-top: 1px solid $color-b5b5b5;
+}
+.border-bottom-d7d7d7{
+    border-bottom: 1px solid $color-d7d7d7;
+}
+.bottom-nav {
+    a {
+      &:hover {
+        color: $color-b5b5b5 !important;
+      }
+    }
+    .page-links{
+        text-decoration: none;
+        color: $color-000;
+    }
+}
+.img-cover{
+    object-fit: cover;
+}
+.product-btn:hover{
+    color: $color-fff;
+}
+.shadow{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.btn:focus {
+    box-shadow: 0 ;
+}
