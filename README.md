@@ -9,5 +9,4 @@ This is a **concept project** created to demonstrate my ability to build a seaml
 * **Backend:** PHP.
 * **Database:** SQL.
 
-## Status: Under Active Development
-I am currently working on adding a shopping cart system and refining the checkout process.
+
